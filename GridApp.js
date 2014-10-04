@@ -24,7 +24,8 @@
 
                     config: {
                         defaultSettings: {
-                            types: 'hierarchicalrequirement'
+                            types: 'hierarchicalrequirement',
+                            multiselect: true
                         }
                     },
 
@@ -33,15 +34,11 @@
                             {
                                 name: 'type',
                                 xtype: 'rallycombobox',
+                                multiselect: true,
                                 shouldRespondToScopeChange: true,
                                 context: this.getContext(),
                                 storeConfig: {
-                                    model: Ext.identityFn('TypeDefinition'),
-                                    sorters: [
-                                        {
-                                            property: 'Name'
-                                        }
-                                    ],
+                                    model: Ext.identityFn('TypeDefinition'),                      
                                     fetch: ['DisplayName', 'ElementName', 'TypePath'],
                                     filters: [
                                         {
