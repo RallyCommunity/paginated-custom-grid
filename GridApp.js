@@ -18,6 +18,13 @@
                         'Rally.domain.WsapiModelBuilder',
                         'Rally.ui.grid.plugin.PercentDonePopoverPlugin'
                     ],
+
+                    items: [
+                        {
+                            xtype: 'container',
+                            itemId: 'exportBtn'
+                        }
+                    ],
                 
 
                 //This section contains the settings details so that there is an editable settings panel after implementing the custom HTML code inside the app. 
